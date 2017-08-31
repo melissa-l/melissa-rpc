@@ -1,0 +1,19 @@
+$baseFontSize: 16;
+@mixin px2rem($name, $px){
+  #{$name}: $px / $baseFontSize * 1rem;
+}
+
+.app-main {
+	@include px2rem(font-size, 50);
+	background-color: #F3F3F3;
+	ul {
+	  @include px2rem(height, 240);
+	  display: flex;
+	  justify-content: center;
+	}
+	  li {
+	    float: left;
+	    margin: 0 6px;
+	    @include px2rem(font-size, 100);
+	  }
+}
