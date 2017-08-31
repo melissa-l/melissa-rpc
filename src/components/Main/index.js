@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import './index.scss';
 // import bg from "../../images/yoman.png";
 import bg from "../../images/32.png";
