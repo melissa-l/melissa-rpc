@@ -7,7 +7,7 @@ $baseFontSize: 16;
 	@include px2rem(font-size, 50);
 	background-color: #F3F3F3;
 	ul {
-	  @include px2rem(height, 240);
+	  @include px2rem(height, 110);
 	  display: flex;
 	  justify-content: center;
 	}

@@ -1,0 +1,86 @@
+  .block {
+    background-color: white;
+    border-bottom: 1px solid rgba(30,35,42,.06);
+    box-shadow: 0 1px 3px 0 rgba(0,34,77,.05);
+  }
+  .header {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid rgba(30,35,42,.06);
+    box-shadow: 0 1px 3px 0 rgba(0,34,77,.05);
+  }
+  /************游戏**************/
+  .mainMsg {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 800px;
+  }  
+  .firstAnswer {
+  	display: flex;
+    flex-basis: 60%; 
+    width: 800px;
+    height: 500px;
+    justify-content: center;
+  }
+  .game{
+  	width: 200px;
+  	height: 400px;
+  	margin-top: 50px;
+  	background-color: #F2FAFF;
+  	border-left: 1px solid blue;
+  	border-right: 1px solid blue;
+  	border-bottom: 1px solid blue;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .footer {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  .next {
+  	width: 80px;
+  	height: 80px;
+  	margin-top: 100px;
+  	background-color: #F2FAFF;
+  	border-right: 1px solid blue;
+  	border-bottom: 1px solid blue;
+  	border-left: 1px solid blue;
+    position: relative;
+  }
+  .info {
+  	width: 100px;
+  	margin: 10px auto;
+  }
+  /**********各个方块**********/
+  .none .current .down {
+  	height: 20px;
+  	width: 20px;
+  	position: absolute;
+  	box-sizing: border-box;
+  }
+  .none {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    box-sizing: border-box;
+  	background-color: #F2FAFF;
+  }
+  .current {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    box-sizing: border-box;
+  	background-color: pink;
+ 	  border: 1px solid red;
+  }
+  .done {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    box-sizing: border-box;
+  	background-color: gray;
+  	border: 1px solid black;
+  }

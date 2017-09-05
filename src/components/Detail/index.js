@@ -3,9 +3,10 @@ import { TimePicker } from 'antd';
 import moment from 'moment';
 import 'rc-time-picker/assets/index.css';
 import TimePickerIs from 'rc-time-picker';
+import './index.scss';
 
 const format = 'HH:mm';
-const format2 = 'h:mm a';
+const format2 = 'h:mm a'; 
 const now = moment().hour(0).minute(0);
 
 const showSecond = true;
@@ -18,7 +19,7 @@ export default class Detail extends React.Component{
 
   render () {
     return (
-      <div>
+      <div className="detail">
           <div>这是详情页</div>
           <TimePicker defaultValue={moment('12:08', format)} format={format} />
           <TimePickerIs
@@ -29,6 +30,10 @@ export default class Detail extends React.Component{
             format={format2}
             use12Hours
           />
+          <div className="box">
+            <div className="box1"></div>
+            <div className="box2"></div>
+          </div>
       </div>
     )
   }

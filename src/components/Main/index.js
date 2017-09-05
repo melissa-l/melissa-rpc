@@ -7,15 +7,23 @@ import bg from "../../images/32.png";
 //   color: 'red',
 //   background: `url${require("../images/yoman.jpg")}`,
 // };
-
+const aa = 1871603;
 export default class Main extends React.Component {
-
+	state = {
+		length: 12,
+		width: 18
+	}
+	handleOnKeyDown = () => {
+		console.log(this);
+	}
 
 	render () {
 		return (
-			<div>
-				<img src={bg}/>
-				Main
+			<div onClick={this.handleOnKeyDown()}>
+				<canvas id="canvas" width="200" height="200">
+				32
+				</canvas>
+				Main32324
 			</div>
 		);
 	}

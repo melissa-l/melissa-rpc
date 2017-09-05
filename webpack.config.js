@@ -48,6 +48,7 @@ module.exports = {
     devServer: {
         publicPath: '/',
         port: 8888,
+        disableHostCheck: true,
         colors: true,  //终端中输出结果为彩色
         historyApiFallback: true,  //不跳转
         inline: true,  //实时刷新
