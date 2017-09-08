@@ -32,18 +32,18 @@ export default class List extends React.Component {
     const state = this.state;
     return (
       <div>
-          <div className='block'>
-            <div className = "mainInput">
-              {
-               state.stories && state.stories.map(item => {
-                 return (
-                   <div key = {item.id} className = 'newsItem'>
-                     <div>{item.title}</div>
-                   </div>
-                 )
-               })
-             }
-            </div>
+        <div className='block'>
+          <div className = "mainInput">
+            {
+             state.stories && state.stories.map(item => {
+               return (
+                 <div key = {item.id} className = 'newsItem'>
+                   <div>{item.title}</div>
+                 </div>
+               )
+             })
+           }
+          </div>
         </div>
       </div>
     )

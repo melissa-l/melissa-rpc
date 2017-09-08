@@ -5,7 +5,8 @@ $baseFontSize: 16;
 
 .app-main {
 	@include px2rem(font-size, 50);
-	background-color: #F3F3F3;
+	// background-color: #F3F3F3;
+	background: linear-gradient(to bottom, #f3f3f3 0%,#ffffff 100%);
 	ul {
 	  @include px2rem(height, 110);
 	  display: flex;

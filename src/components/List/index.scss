@@ -2,7 +2,7 @@
   height: 100%;
   width: 100%;
   background-color: rgb(241,170,166);
-  // overflow: scroll;
+  // overflow: scroll; 
   .mainInput {
     height: 600px;
     width: 380px;
@@ -11,13 +11,13 @@
     float: right;
     position: absolute;
     bottom: 0;
-    overflow: auto;
+    overflow: scroll;
     .newsItem {
       height: 30px;
-      background-color: rgb(221,240,237);
+      background-color: #f3f3f3;
       margin: 5px;
       border-radius: 5px;
-      overflow-y: scroll;
+      overflow-y: hidden;
     }
   }
 }
