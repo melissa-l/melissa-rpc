@@ -1,4 +1,6 @@
 import {creatStore} from 'redux';
+import tode from './reducer/reducer.js';
+
 const store = creatStore(fn);
 
 const state = store.getState();

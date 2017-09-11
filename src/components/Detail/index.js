@@ -13,6 +13,17 @@ const showSecond = true;
 const str = showSecond ? 'HH:mm:ss' : 'HH:mm';
 
 export default class Detail extends React.Component{
+  componentDidMount() {
+        var oSel=document.getElementById('sel');
+        //alert(oSel.value);    //当前选中的option的value 
+
+        var aOption=oSel.getElementsByTagName('option');
+        for(var i=0;i<aOption.length;i++){
+            if(aOption[i].selected==true){
+                console.log(aOption[i].innerHTML);    
+            }
+        }  
+  }
   onChange = value => {
     // console.log(value && value.format(format));
   }
@@ -34,6 +45,11 @@ export default class Detail extends React.Component{
             <div className="box1"></div>
             <div className="box2"></div>
           </div>
+          <div className="table">tableee</div>
+          <select id="sel">
+              <option value="sh">上海</option>
+              <option value="bj">北京</option>
+          </select>
       </div>
     )
   }
