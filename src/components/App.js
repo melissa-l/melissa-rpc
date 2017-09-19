@@ -6,7 +6,7 @@ import List from "./List/index.js";
 import Detail from "./Detail/index.js";
 import Tetris from "./Tetris/index.js";
 import Echarts from './Echarts/index.js';
-// import Canvas from './Canvas/index.js';
+import Canvas from './Canvas/index.js';
 // import { Router, Route, hashHistory } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
@@ -31,12 +31,14 @@ export class App extends React.Component{
           <li className={`${state.tabIndex === 1 ? 'active' : ''}`} data-index="1"><Link to="/list">List</Link></li>
           <li className={`${state.tabIndex === 2 ? 'active' : ''}`} data-index="2"><Link to="/detail">Detail</Link></li>
           <li className={`${state.tabIndex === 3 ? 'active' : ''}`} data-index="3"><Link to="/echarts">Echarts</Link></li>
+          <li className={`${state.tabIndex === 4 ? 'active' : ''}`} data-index="4"><Link to="/canvas">Canvas</Link></li>
         </ul>
         <hr/> 
         <Route exact path="/" component={Main} />
         <Route path="/list" component={List} />
         <Route path="/detail" component={Detail} />
         <Route path="/echarts" component={Echarts} />
+        <Route path="/canvas" component={Canvas} />
       </div>
     </Router>
     )

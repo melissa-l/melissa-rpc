@@ -1,10 +1,7 @@
 import React from 'react';
 import './index.scss';
-// import ReactCanvas from 'react-canvas';
-var ReactCanvas = require('react-canvas');
-import fs from 'fs';
 
-export default class CanvasBg extends React.Component {
+export default class Canvas extends React.Component {
   state = {
     date: '',
     stories: [],
@@ -14,13 +11,14 @@ export default class CanvasBg extends React.Component {
   render () {
     const date = this.state.date;
     const stories = this.state.stories;
-
-    var surfaceWidth = window.innerWidth;
-    var surfaceHeight = window.innerHeight;
-    var imageStyle = this.getImageStyle();
-    var textStyle = this.getTextStyle();
     return (
-      <div>21</div>
+      <section className="section">
+        <header className="header">
+          <div className="content">
+            我在居中（transform）
+          </div>
+        </header>
+      </section>
     )
   }
 }
