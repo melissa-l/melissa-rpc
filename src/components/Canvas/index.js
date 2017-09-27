@@ -18,6 +18,9 @@ export default class Canvas extends React.Component {
             我在居中（transform）
           </div>
         </header>
+        <section className="quera">
+          我要做一个正方形
+        </section>
       </section>
     )
   }

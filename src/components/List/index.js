@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import fetch from 'isomorphic-fetch';
 require('es6-promise').polyfill();
 import './index.scss';
@@ -10,7 +10,7 @@ export default class List extends React.Component {
     top_stories: [],
   }
   componentDidMount(){
-    const state = this.state;
+    const state = this.state;   
     // if (!state.stories) {
       fetch('/list/api/4/news/before/20131119')
       .then(res => res.json())
