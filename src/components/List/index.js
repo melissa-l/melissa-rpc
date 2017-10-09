@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 import fetch from 'isomorphic-fetch';
 require('es6-promise').polyfill();
 import './index.scss';
@@ -13,13 +13,17 @@ export default class List extends React.Component {
     const state = this.state;   
     // if (!state.stories) {
       fetch('/list/api/4/news/before/20131119')
-      .then(res => res.json())
+      .then(res => {
+        console.log(res)
+        res.json()
+      })
       .then(res => {
         console.log(res);
         this.setState({
           date: res.date,
           stories: res.stories,
         });
+        console.log(res)
       })
       .catch(err => {
         // this.state.listMsg = errorMsg(err && err.extra || err);

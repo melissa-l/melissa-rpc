@@ -65,6 +65,13 @@ module.exports = {
             pathRewrite: {
               '^/list': ''
             }
+          },
+          '/img': {
+            target: 'http://oxjbczmil.bkt.clouddn.com',
+            changeOrigin: true,
+            pathRewrite: {
+              '^/img': ''
+            }
           }
         }
     },

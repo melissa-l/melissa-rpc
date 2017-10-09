@@ -7,7 +7,7 @@ $baseFontSize: 16;
 	@include px2rem(font-size, 50);
 	// background-color: #F3F3F3;
 	background: linear-gradient(to bottom, #f3f3f3 0%,#ffffff 100%);
-	ul {
+	ul { 
 	  @include px2rem(height, 110);
 	  display: flex;
 	  justify-content: center;
@@ -17,4 +17,43 @@ $baseFontSize: 16;
 	    margin: 0 6px;
 	    @include px2rem(font-size, 100);
 	  }
+	height: 100%;
+	margin: 0;
+	position: relative;
+	background: #262e6f;
+	font-family: "Open Sans";
+}
+.app-nav {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#wrap p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: rgba(255,255,255,.5);
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.ball {
+    pointer-events: none;
+    position: absolute; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    background: gray;
+    animation: implode 1s ease-in-out;
+    animation-fill-mode: both;
+    opacity: .5;
+}  
+
+@keyframes implode {
+  100% {transform: scale(0)}
 }
